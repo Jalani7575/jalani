@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cerebrox Learning Academy</title>
+  <meta name="description" content="Student enrollment, monthly fees and teacher payments for Cerebrox Learning Academy">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">C</div><div><b id="brand-name">Cerebrox Learning Academy</b><small>Academy manager</small></div></div>
+    <nav class="nav">
+      <a href="#/dashboard">📊 Dashboard</a>
+      <a href="#/students">🎓 Students</a>
+      <a href="#/fees">💰 Monthly Fees</a>
+      <a href="#/subjects">📚 Subjects &amp; Fees</a>
+      <a href="#/teachers">👩‍🏫 Teachers</a>
+      <a href="#/payouts">🤝 Teacher Payments</a>
+      <a href="#/reports">📈 Reports</a>
+      <a href="#/settings">⚙️ Settings &amp; Backup</a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button id="menu-btn" class="icon-btn menu" aria-label="Menu">☰</button>
+      <h1 id="page-title">Dashboard</h1>
+      <div id="month-wrap" class="month-wrap">
+        <button id="month-prev" class="icon-btn" aria-label="Previous month">‹</button>
+        <input type="month" id="month-picker" aria-label="Month">
+        <button id="month-next" class="icon-btn" aria-label="Next month">›</button>
+      </div>
+    </header>
+    <main id="view"></main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast" role="status"></div>
+  <div id="print-area"></div>
+
+  <script src="js/calc.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
